@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="capstone.css" type="text/css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://malsup.github.io/min/jquery.cycle2.min.js"></script>
+     <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen"/>
+     
+    <title>Mac Auto Sales Inc</title>
+</head>
+<body>
+    <div id="container">
+
+        <div class="fixed-width">
+            <div id="header">
+                <div class="logo">
+                    <img src="images/myLogo.PNG" />
+                </div>
+                <div class="address">
+                    <p>
+                        11834, Chase Wellesley Dr.<br />
+                        Richmond VA-23233<br />
+                        (804)342-0345
+                    </p>
+                </div>
+                <div class="fbtwitlinks">
+                    <div class="square">
+                        <a href="https://www.facebook.com/" title="Follow us on Facebook" target="_blank">
+                            <img title="Follow us on Facebook" src="images/facebook.PNG" style="width: 25px; height: 25px;" /></a>
+                    </div>
+                    <div class="square">
+                        <a href="https://twitter.com/" title="Follow us on Twitter" target="_blank">
+                            <img title="Follow us on Twitter" src="images/twitter.PNG" style="width: 25px; height: 25px;" /></a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="break"></div>
+        <div id="main-navbar">
+            <div class="fixed-width">
+                <div id="navbar">
+                    <ul class="menu">
+                        <li><a href="index.html" title="Home">Home</a></li>
+                        <li><a href="inventory.html" title="Inventory">Inventory</a></li>
+                        <li><a href="service.php" title="Services">Services</a></li>
+                        <li><a href="apply.html" title="Apply Online">Apply Online</a></li>
+                        <li><a href="calculator.html" title="Loan Calculator">Loan Calculator</a></li>
+                        <li><a href="directions.html" title="Directions">Directions</a></li>
+                        <li><a href="about.html" title="About Us">About Us</a></li>
+                        <li><a href="contact.html" title="Contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="break"></div>
+        <div id="main-content">
+            <div class="fixed-width">
+                <div class="calci">
+                    <h2>Loan Calculator from Mac Auto Sales Inc.</h2>
+                    <p>Type in the loan amount, annual interest rate and the term of the loan in months. Then press the 'Calculate' button </p>
+                    <div class="calciForm">
+                        <label for="loanAmt" class="calciLabel">Car Loan Amount ($) :</label>
+    <input type="number" id="amount" name="loanAmt" min="0" max="1000000" value="10000" step="1000" onchange="computeLoan()" style="width: 150px;" /><br />
+
+    <label for="intRate" class="calciLabel">Annual Interest Rate :</label>
+    <input type="number" name="intRate" id="interest_rate" min="0" max="100" value="4.5" step=".1" onchange="computeLoan()" style="width: 150px;" /> %<br />
+
+    <label for="loanterm" class="calciLabel">Term of Car Loan :</label>
+    <input type="number" name="loanterm" id="months" min="1" max="72" value="60" step="1" onchange="computeLoan()" style="width: 150px;" /> Months<br />
+    <button class="calciBut" id="calcBut" onclick="computeLoan()">Calculate</button>
+    <h2 id="payment" ></h2>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <div class="break"></div>
+        <div class="fixed-width">
+            <div class="footer-nav">
+                <ul class="menu-1">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="service.php">Services</a></li>
+                    <li><a href="apply.html">Apply Online</a></li>
+                    <li><a href="calculator.html">Loan Calculator</a></li>
+                    <li><a href="directions.html">Directions</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        
+
+ <div class="fixed-width">
+        <div class="disclaimer">            
+            <p style=" padding:10px;">All the content on this site is used for academic purposes only and not intended for commercial use. <br />Stratford University(Glen Allen Campus-07/2015).</p>
+        </div>
+            </div>
+
+   <a href="#" class="back-to-top" style="display: inline;">
+<i class="fa fa-arrow-circle-up"></i>
+</a>
+
+
+
+    </div>
+
+    <!--javascript for Loan Calculator-->
+     <script>
+
+         function computeLoan() {
+             var amount = document.getElementById('amount').value;
+             var interest_rate = document.getElementById('interest_rate').value;
+             var months = document.getElementById('months').value;
+             var interest = (amount * (interest_rate * .01)) / months;
+             var payment = ((amount / months) + interest).toFixed(2);
+             payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+             document.getElementById('payment').innerHTML = "Monthly Payment = $" + payment;
+         }
+    </script>
+
+  <!--  Jquery --back to top icon-->
+     <script>
+         jQuery(document).ready(function () {
+             var offset = 250;
+             var duration = 300;
+             jQuery(window).scroll(function () {
+                 if (jQuery(this).scrollTop() > offset) {
+                     jQuery('.back-to-top').fadeIn(duration);
+                 } else {
+                     jQuery('.back-to-top').fadeOut(duration);
+                 }
+             });
+
+             jQuery('.back-to-top').click(function (event) {
+                 event.preventDefault();
+                 jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                 return false;
+             })
+         });
+</script>
+    
+
+
+
+</body>
+</html>

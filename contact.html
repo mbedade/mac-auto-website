@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="capstone.css" type="text/css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://malsup.github.io/min/jquery.cycle2.min.js"></script>
+    <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen" />
+    <title>Mac Auto Sales Inc</title>
+</head>
+<body>
+    <div id="container">
+
+        <div class="fixed-width">
+            <div id="header">
+                <div class="logo">
+                    <img src="images/myLogo.PNG" />
+                </div>
+                <div class="address">
+                    <p>
+                        11834, Chase Wellesley Dr.<br />
+                        Richmond VA-23233<br />
+                        (804)342-0345
+                    </p>
+                </div>
+                <div class="fbtwitlinks">
+                    <div class="square">
+                        <a href="https://www.facebook.com/" title="Follow us on Facebook" target="_blank">
+                            <img title="Follow us on Facebook" src="images/facebook.PNG" style="width: 25px; height: 25px;" /></a>
+                    </div>
+                    <div class="square">
+                        <a href="https://twitter.com/" title="Follow us on Twitter" target="_blank">
+                            <img title="Follow us on Twitter" src="images/twitter.PNG" style="width: 25px; height: 25px;" /></a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="break"></div>
+        <div id="main-navbar">
+            <div class="fixed-width">
+                <div id="navbar">
+                    <ul class="menu">
+                        <li><a href="index.html" title="Home">Home</a></li>
+                        <li><a href="inventory.html" title="Inventory">Inventory</a></li>
+                        <li><a href="service.php" title="Services">Services</a></li>
+                        <li><a href="apply.html" title="Apply Online">Apply Online</a></li>
+                        <li><a href="calculator.html" title="Loan Calculator">Loan Calculator</a></li>
+                        <li><a href="directions.html" title="Directions">Directions</a></li>
+                        <li><a href="about.html" title="About Us">About Us</a></li>
+                        <li><a href="contact.html" title="Contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="break"></div>
+        <div id="main-content">
+            <div class="fixed-width">
+                <div id="contact">
+                    <div id="formWrapper">
+
+                        <form id="validationForm" action="contact.php" method="post">
+
+
+                            <h2>Contact Mac Auto Sales Inc. of Richmond-VA</h2>
+
+                            <div id="error"></div>
+                            <p style="padding-left: 20px;">Send any comments or questions by completing the form below.</p>
+
+                            <label for="fname">First Name :</label>
+                            <input type="text" name="fname" id="fname" />
+
+                            <label for="lname">Last Name :</label>
+                            <input type="text" name="lname" />
+
+                            <label for="city">City :</label>
+                            <input type="text" name="city" />
+
+                            <label for="state">State/zip :</label>
+                            <select name="state" style="width: 45px;">
+                                <option value=""></option>
+                                <option value="AL">AL</option>
+                                <option value="AK">AK</option>
+                                <option value="AZ">AZ</option>
+                                <option value="AR">AR</option>
+                                <option value="CA">CA</option>
+                                <option value="CO">CO</option>
+                                <option value="CT">CT</option>
+                                <option value="DE">DE</option>
+                                <option value="DC">DC</option>
+                                <option value="FL">FL</option>
+                                <option value="GA">GA</option>
+                                <option value="HI">HI</option>
+                                <option value="ID">ID</option>
+                                <option value="IL">IL</option>
+                                <option value="IN">IN</option>
+                                <option value="IA">IA</option>
+                                <option value="KS">KS</option>
+                                <option value="KY">KY</option>
+                                <option value="LA">LA</option>
+                                <option value="ME">ME</option>
+                                <option value="MD">MD</option>
+                                <option value="MA">MA</option>
+                                <option value="MI">MI</option>
+                                <option value="MN">MN</option>
+                                <option value="MS">MS</option>
+                                <option value="MO">MO</option>
+                                <option value="MT">MT</option>
+                                <option value="NE">NE</option>
+                                <option value="NV">NV</option>
+                                <option value="NH">NH</option>
+                                <option value="NJ">NJ</option>
+                                <option value="NM">NM</option>
+                                <option value="NY">NY</option>
+                                <option value="NC">NC</option>
+                                <option value="ND">ND</option>
+                                <option value="OH">OH</option>
+                                <option value="OK">OK</option>
+                                <option value="OR">OR</option>
+                                <option value="PA">PA</option>
+                                <option value="RI">RI</option>
+                                <option value="SC">SC</option>
+                                <option value="SD">SD</option>
+                                <option value="TN">TN</option>
+                                <option value="TX">TX</option>
+                                <option value="UT">UT</option>
+                                <option value="VT">VT</option>
+                                <option value="VA">VA</option>
+                                <option value="WA">WA</option>
+                                <option value="WV">WV</option>
+                                <option value="WI">WI</option>
+                                <option value="WY">WY</option>
+
+                            </select>
+
+                            <input type="text" name="zip" style="width: 250px;" />
+
+                            <label for="phone">Phone :</label>
+                            <input type="text" name="phone" id="phone" />
+
+                            <label for="email">Email :</label>
+                            <input type="text" name="email" id="email" />
+
+                            <label for="comments">Comments/Questions :</label>
+                            <textarea name="comments"></textarea>
+
+                            <input type="submit" name="submit" value="Submit" id="submitBut" />
+
+                        </form>
+                    </div>
+
+                    <div class="storehours">
+                        <div class="block">
+                            <p>
+                                <b>Sales</b><br />
+
+                                <p>
+                                    11834, Chase Wellesley Dr.<br />
+                                    Richmond VA-23233<br />
+                                    (804)342-0345<br />
+                                </p>
+                                Email:<u>macautosales@aol.com</u>
+                            </p>
+                            <hr />
+                            <p><b>Office Hours </b></p>
+                            <p>
+                                Monday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 	9:00 AM - 6:00 PM<br />
+                                Tuesday: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	9:00 AM - 6:00 PM<br />
+                                Wednesday:&nbsp;&nbsp;9:00 AM - 6:00 PM<br />
+                                Thursday: &nbsp;&nbsp;&nbsp;&nbsp;	9:00 AM - 5:00 PM<br />
+                                Friday: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	9:00 AM - 5:00 PM<br />
+                                Saturday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00 AM - 3:00 PM<br />
+                                Sunday: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9:00 AM - 1:00 PM
+                            </p>
+                            <hr />
+                            <p>
+                                Thank you for visiting.<br />
+                                Feel free to contact us with any further questions
+                            <br />
+                                and we will be happy to assist you.
+                            </p>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="break"></div>
+        <div class="fixed-width">
+            <div class="footer-nav">
+                <ul class="menu-1">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="service.php">Services</a></li>
+                    <li><a href="apply.html">Apply Online</a></li>
+                    <li><a href="calculator.html">Loan Calculator</a></li>
+                    <li><a href="directions.html">Directions</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+         <div class="fixed-width">
+        <div class="disclaimer">            
+            <p style=" padding:10px;">All the content on this site is used for academic purposes only and not intended for commercial use. <br />Stratford University(Glen Allen Campus-07/2015).</p>
+        </div>
+            </div>
+
+        <a href="#" class="back-to-top" style="display: inline;">
+            <i class="fa fa-arrow-circle-up"></i>
+        </a>
+
+
+
+    </div>
+
+    <!--  form validation using jquery for form on contact us page -->
+
+
+    <script>
+
+        $("#validationForm").submit(function (event) {
+            event.preventDefault();
+
+            var errorMessage = "";
+
+            //checks first name to be 3-16 characters long and contain only letters, 
+
+            if (!$("#fname").val().match('^[a-zA-Z]{3,16}$')) {
+                errorMessage = "First name must contain only letters";
+
+            }
+            //validate email address
+            //used regex complicated formula from the web --jquery validate email address
+
+            function isValidEmailAddress(emailAddress) {
+                var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
+                return pattern.test(emailAddress);
+            };
+
+            if (!isValidEmailAddress($("#email").val())) {
+                errorMessage = errorMessage + "<br/>Please enter a valid email address";
+            }
+
+
+            //validate phone number using jquery function--isNumeric
+            if (!$.isNumeric($("#phone").val())) {
+                errorMessage = errorMessage + "<br/>Please enter a valid phone number";
+            } if (errorMessage == "") {
+                alert("Information submitted!");
+            } else {
+
+                $("#error").html(errorMessage);
+            }
+
+        });
+
+    </script>
+
+
+    <script>
+        //back to top icon 
+        jQuery(document).ready(function () {
+            var offset = 250;
+            var duration = 300;
+            jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() > offset) {
+                    jQuery('.back-to-top').fadeIn(duration);
+                } else {
+                    jQuery('.back-to-top').fadeOut(duration);
+                }
+            });
+
+            jQuery('.back-to-top').click(function (event) {
+                event.preventDefault();
+                jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                return false;
+            })
+        });
+    </script>
+
+
+
+
+</body>
+</html>
